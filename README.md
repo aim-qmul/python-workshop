@@ -47,6 +47,8 @@ You should see the bash prompt has changed to
 pip install -r requirements.txt
 ```
 
+### Option 1 - Running the notebooks via a terminal
+
 - We also need to install the following package as well
 
 ```
@@ -55,6 +57,35 @@ pip install euporie
 
 This lets us view/run the notebooks without needing to setup SSH tunneling. Type `euporie 02<TAB>` to autocomplete the notebook name, then hit enter. The instructions for using euporie can be found at https://github.com/joouha/euporie#key-bindings
 
+### Option 2 - Running the notebooks in a browser
+
+- From inside the `python-workshop` folder, run:
+
+```
+jupyter notebook
+```
+
+It should print out some messages with a section that says:
+
+```
+Or copy and paste one of these URLs:
+        http://localhost:8888/?token=ed355834fbd<rest of a token here>
+     or http://127.0.0.1:8888/?token=ed355834fbd<rest of a token here>
+```
+
+Do as it says and copy one of those into your web browser. It won't work until we complete the next step.
+
+- Open a new terminal window and run the following command to setup an SSH tunnel (assuming you are on a Mac or Linux) - *NB Remember to replace jxr01 with your username*:
+
+```
+ssh -J jxr01@frank.eecs.qmul.ac.uk jxr01@bibury.eecs.qmul.ac.uk -NL 8888:localhost:8888
+```
+
+This won't produce any output and will appear to hang. Don't worry. If you see an error, make sure nothing else is running locally on port 8888. Also make sure you have your ssh keys set up[^1].
+
+- Go back to the browser window from the previous step and refresh the page
+
+[^1]: `ssh-add -L` will show what is currently in your ssh keychain. If it is empty, you probably need to run `ssh-add -K ~/.ssh/id_rsa`
 
 ## (Optional) Running locally
 
