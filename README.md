@@ -19,6 +19,8 @@ cd ~
 git clone https://github.com/aim-qmul/python-workshop.git
 # cd into the new folder
 cd python-workshop
+# load the completed cells from a previous workshop
+git checkout rm-2019-11-session1
 ```
 
 ### Installing dependencies
