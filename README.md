@@ -77,7 +77,7 @@ pip install -r requirements.txt
 pip install euporie
 ```
 
-This lets us view/run the notebooks without needing to setup SSH tunneling. Type `euporie 02<TAB>` to autocomplete the notebook name, then hit enter. The instructions for using euporie can be found at https://github.com/joouha/euporie#key-bindings
+This lets us view/run the notebooks without needing to setup [SSH tunneling](https://github.com/aim-qmul/python-workshop/blob/master/SSH-for-AIM.md). Type `euporie 02<TAB>` to autocomplete the notebook name, then hit enter. The instructions for using euporie can be found at https://github.com/joouha/euporie#key-bindings
 
 ### Viewing Notebooks - Option 2 - Running the notebooks in a browser
 
@@ -97,7 +97,7 @@ Or copy and paste one of these URLs:
 
 Do as it says and copy one of those into your web browser. It won't work until we complete the next step.
 
-- Open a new terminal window and run the following command to setup an SSH tunnel (assuming you are on a Mac or Linux) - *NB Remember to replace jxr01 with your username*:
+- Open a new terminal window and run the following command to setup an [SSH tunnel](https://github.com/aim-qmul/python-workshop/blob/master/SSH-for-AIM.md) (assuming you are on a Mac or Linux) - *NB Remember to replace jxr01 with your username*:
 
 ```
 ssh -J jxr01@frank.eecs.qmul.ac.uk jxr01@bibury.eecs.qmul.ac.uk -NL 8888:localhost:8888
