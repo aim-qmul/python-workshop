@@ -114,3 +114,10 @@ More advanced python programming and design paradigms. A software engineering pe
 * [Understanding all of Python, through its builtins](https://sadh.life/post/builtins)
 
 The whole language, explained, in a single page. Whats not to like?
+
+### Other useful links
+
+* [Matplot lib for papers](https://github.com/jbmouret/matplotlib_for_papers)
+* [Numpy tutorial](https://cs231n.github.io/python-numpy-tutorial/)
+* [Intro to types with Python](https://auth0.com/blog/typing-in-python/)
+* [Pandas tutorials](https://pandas.pydata.org/pandas-docs/dev/getting_started/tutorials.html)
