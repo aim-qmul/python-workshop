@@ -2,6 +2,10 @@
 
 Welcome to this intro workshop. Please read the following instructions carefully - ask a demonstrator if something is not working for you.
 
+## Intro slides
+
+https://docs.google.com/presentation/d/1sI9aAuMo_I0bShzbD1BG-Ia-Qk7dK841DU5MuXNdxVM/edit?usp=sharing
+
 ## (Recommended) Running on the AIM servers
 
 1) Run the following commands, one line at a time. Lines beginning with `#` are comments to explain what is going on.
@@ -57,3 +61,25 @@ This lets us view/run the notebooks without needing to setup SSH tunneling. Type
 - Download the files for this workshop by clicking on the green "clone or download" button, then "Download ZIP", and unzip. Alternatively, clone the repo.
 - Start by following the first few notebooks online (here on GitHub), until you'll have your python environment ready.
 - After that, from the command line, activate your virtual environment, run `jupyter notebook` and follow along.
+
+## Books and resources
+
+### If Python is your first programming language
+
+* The Quick Python Book 
+
+Aimed at programmers who are new to python
+
+### If you already know another programming language well
+
+* Python for Data Analysis - Wes Mckinney
+
+Beginner-intermediate level book for manipulating and analysing data with Pandas
+
+* Thinking in Python - Bruce Eckel
+
+More advanced python programming and design paradigms. A software engineering perspective. Very useful for writing good, clean python code and maintaining larger software projects.
+
+* [Understanding all of Python, through its builtins](https://sadh.life/post/builtins)
+
+The whole language, explained, in a single page. Whats not to like?
