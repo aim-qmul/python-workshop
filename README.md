@@ -117,6 +117,7 @@ The whole language, explained, in a single page. Whats not to like?
 
 ### Other useful links
 
+* [The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
 * [Matplot lib for papers](https://github.com/jbmouret/matplotlib_for_papers)
 * [Numpy tutorial](https://cs231n.github.io/python-numpy-tutorial/)
 * [Intro to types with Python](https://auth0.com/blog/typing-in-python/)
