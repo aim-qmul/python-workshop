@@ -21,7 +21,13 @@ git clone https://github.com/aim-qmul/python-workshop.git
 cd python-workshop
 ```
 
-2) we will now setup a python environment on the server. There are lots of ways to do this but the easiest is to use `miniconda`. Run the following commands:
+### Installing dependencies
+
+You have two options here - `miniconda` or `virtualenv`. Choose your favourite.
+
+#### (with miniconda)
+
+2a) we will now setup a python environment on the server. There are lots of ways to do this - one is to use `miniconda`. Run the following commands:
 
 ```
 # load the miniconda module
@@ -41,15 +47,31 @@ You should see the bash prompt has changed to
 (python-workshop) -bash-4.2$
 ```
 
+#### (with virtualenv)
+
+2b) Instructions for using `virtualenv` are as follows:
+
+```
+# from inside the python-workshop folder
+module load python/3.8.<TAB> # hit tab here to autocomplete to the latest available 3.8 version, then press enter. 3.8.2 at the time of writing
+# the last argument here is a name for the folder which will hold all the virtualenv files
+# it can be anything e.g. `mycoolvenvname`, but we'll use `venv`
+python3 -m venv venv
+# the next line is important - it sets up all the paths
+# You will need to rerun this each time you log in to the server
+# Notice that venv/bin/activate is a bash script, in the local folder
+source venv/bin/activate
+```
+
 3) we are now ready to install the python dependencies for this project
 
 ```
 pip install -r requirements.txt
 ```
 
-### Option 1 - Running the notebooks via a terminal
+### Viewing Notebooks - Option 1 - Running the notebooks via a terminal
 
-- We also need to install the following package as well
+4a) We also need to install the following package as well
 
 ```
 pip install euporie
@@ -57,9 +79,9 @@ pip install euporie
 
 This lets us view/run the notebooks without needing to setup SSH tunneling. Type `euporie 02<TAB>` to autocomplete the notebook name, then hit enter. The instructions for using euporie can be found at https://github.com/joouha/euporie#key-bindings
 
-### Option 2 - Running the notebooks in a browser
+### Viewing Notebooks - Option 2 - Running the notebooks in a browser
 
-- From inside the `python-workshop` folder, run:
+4b) From inside the `python-workshop` folder, run:
 
 ```
 jupyter notebook
